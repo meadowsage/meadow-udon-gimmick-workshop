@@ -27,7 +27,7 @@
 | Tarai Rigidbody | たらいに付けた Rigidbody |
 | Height Above Head | 頭上から落とす高さ（既定: 2m） |
 | Hide Delay | 衝突してから隠すまでの秒数（既定: 1秒） |
-| Impact Audio | Spatial Blendを0にした効果音用 Audio Source |
+| Impact Audio | Spatial Blend を 0 にした効果音用 Audio Source |
 | Controller | Collision Relay から参照する進入エリア |
 
 ## API リファレンス
@@ -41,5 +41,5 @@
 ## 注意点
 
 - 落下中に別のプレイヤーが入った場合、その入場は無視されます。一度エリア外へ出て、たらいが消えてから入り直してください。
-- Boothで購入したモデルは、たらいの GameObject の見た目として子に配置してください。
+- BOOTH で購入したモデルは、たらいの GameObject の見た目として子に配置してください。
 - 同期確認は複数クライアントで行ってください。衝突判定と位置同期は、たらいの所有者が担当します。
