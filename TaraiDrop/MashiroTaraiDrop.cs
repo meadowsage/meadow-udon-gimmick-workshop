@@ -89,6 +89,9 @@ namespace MashiroTheater
 
         public override void OnDeserialization()
         {
+            // インスペクタの設定途中でも、同期受信によって例外が発生し続けないようにする。
+            if (tarai == null) return;
+
             if (isDropping)
             {
                 tarai.SetActive(true);
